@@ -1,4 +1,4 @@
-import myCollection from "/Users/tasniim/github-classroom/SchoolOfCode/node-101-workshop-antonio-tas/collection.js";
+import myCollection from "./collection.js";
 
   function describeItem(item) {
      if (item.count === 1) {
@@ -7,8 +7,6 @@ import myCollection from "/Users/tasniim/github-classroom/SchoolOfCode/node-101-
          console.log(`I have ${item.count} ${item.name}s. Here's what I like about them: ${item.whatILike}`)
      }
   }
-
-  describeItem(myCollection[0]);
 
   function describeCollection(array) {
       array.map(item => describeItem(item));
